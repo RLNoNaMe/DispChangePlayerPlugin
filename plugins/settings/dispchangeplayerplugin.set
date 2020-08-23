@@ -1,0 +1,32 @@
+DispChangePlayerPlugin
+1|Enable|enable_disp_change_player_plugin
+8|
+1|Random Change Players|enable_random_change_players
+6|Players Num|random_change_players_num|1@1&2@2&3@3&4@4&5@5&6@6&7@7&8@8
+8|
+1|Random Change Players on Team (Prioritize Random Change Players)|enable_random_change_players_on_team
+6|Players Num on Team Blue|random_change_players_num_on_team_blue|0@0&1@1&2@2&3@3&4@4
+6|Players Num on Team Orange|random_change_players_num_on_team_orange|0@0&1@1&2@2&3@3&4@4
+8|
+1|Change Players on Team (Prioritize Random Change Players, and Random Change Players on Team)|enable_change_players_rank_on_team
+6|Players Rank on Team Blue|change_player_rank_on_team_blue|0@0&1@1&2@2&3@3&4@4
+6|Players Rank on Team Orange|change_player_rank_on_team_orange|0@0&1@1&2@2&3@3&4@4
+8|
+1|Change Low Score Players on Lose Team (Prioritize Random Change Players, Random Change Players on Team, and Change Players on Team)|enable_change_low_score_players_num_on_lose_team
+6|Low Score Players Num on Lose Team|change_low_score_player_num_on_lose_team|1@1&2@2&3@3&4@4
+8|
+5|Fill Box Color R|fill_box_color_r|0|255
+5|Fill Box Color G|fill_box_color_g|0|255
+5|Fill Box Color B|fill_box_color_b|0|255
+5|Fill Box Color A|fill_box_color_a|0|255
+8|
+5|Draw Box Color R|draw_box_color_r|0|255
+5|Draw Box Color G|draw_box_color_g|0|255
+5|Draw Box Color B|draw_box_color_b|0|255
+5|Draw Box Color A|draw_box_color_a|0|255
+8|
+5|X Position|x_position|0|100
+5|Y Position|y_position|0|100
+4|Box Scale|box_scale|1|3
+8|
+9|powered by NoNaMe
