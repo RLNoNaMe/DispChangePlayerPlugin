@@ -1,0 +1,2 @@
+# DispChangePlayerPlugin
+ロケットリーグのMODの1つ、BakkesModのプラグインです。
