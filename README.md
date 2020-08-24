@@ -156,6 +156,8 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 リクエストも受け付けておりません。ごめんね。
 
 ## 6. コミュニケーション
-|:---:|:---|
-|[Twitter](https://twitter.com/azurehawk)|あんまりつぶやかないです。|
-|[Discord](https://discord.gg/bk6cWFU)|ライブとかするかもです。仲良くしてね！|
+
+| Name | Comment |
+| :---: | :--- |
+| [Twitter](https://twitter.com/azurehawk)| あんまりつぶやかないです。 |
+| [Discord](https://discord.gg/bk6cWFU)| ライブとかするかもです。仲良くしてね！ |
