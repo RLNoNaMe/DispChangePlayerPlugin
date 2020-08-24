@@ -22,13 +22,14 @@
 BakkesModをインストールし、ロケットリーグで動作の確認ができましたら、  
 プラグインのダウンロードに進んでください。
 
-## 1. プラグインのダウンロード方法
+## 1. プラグインのダウンロード
 本ページ上部の緑色のCodeボタン→Download ZIPボタンから、  
 もしくは下記リンクからプラグインをダウンロードし解凍してください。
 
 [ダウンロード](https://github.com/RLNoNaMe/DispChangePlayerPlugin/archive/master.zip)
 
-プラグインのインストールに必要なファイルは2つだけです。
+いろいろなファイルがありますが、  
+プラグインのインストールに必要なファイルは下記の2つだけです。
 
 1. DispChangePlayerPlugin.dll（`plugins`フォルダ内）
 2. dispchangeplayerplugin.set（`plugins`フォルダ->`setting`フォルダ内）
@@ -36,7 +37,7 @@ BakkesModをインストールし、ロケットリーグで動作の確認ができましたら、
 解凍したファイル群から2つのファイルが確認できましたら、  
 プラグインのインストールに進んでください。
 
-## 2. プラグインのインストール方法
+## 2. プラグインのインストール
 下記手順に沿ってインストールを行ってください。
 
 1. BakkesModを起動し`File`->`Open BakkesMod folder`でフォルダを開く
@@ -57,69 +58,69 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 2. `plugins`タブを押し、左のサイドメニューから「DispChangePlayerPlugin」を選択
 
 ### 3.2. 操作画面の説明
-#### Enable
+#### __Enable__
 チェックを入れるとプラグインが有効になります。
 
 ---
 
-#### Random Change Players
+#### __Random Change Players__
 試合参加選手から選手名をランダムに表示します。  
 表示する選手数は任意に決めれます。  
 チェックを入れると有効になります。
 
-#### Players Num
+#### __Players Num__
 試合参加選手から表示する選手数を選択できます。
 
 ---
 
-#### Random Change Players on Team (Prioritize Random Change Players)
+#### __Random Change Players on Team (Prioritize Random Change Players)__
 各チームから選手名をランダムに表示します。  
 表示する選手数は任意に決めれます。  
 チェックを入れると有効になります。  
 ※`Random Change Players`にチェックが入っている場合は無効になります。
 
-#### Players Num on Team Blue
+#### __Players Num on Team Blue__
 ブルーチームから表示する選手数を選択できます。
 
-#### Players Num on Team Orange
+#### __Players Num on Team Orange__
 オレンジチームから表示する選手数を選択できます。
 
 ---
 
-#### Change Players on Team (Prioritize Random Change Players, and Random Change Players on Team)
+#### __Change Players on Team (Prioritize Random Change Players, and Random Change Players on Team)__
 各チームから任意の順位の選手名を表示します。  
 チェックを入れると有効になります。  
 ※`Random Change Players`、または`Random Change Players on Team`にチェックが入っている場合は無効になります。
 
-#### Players Rank on Team Blue
+#### __Players Rank on Team Blue__
 ブルーチームから表示する選手の順位を選択できます。
 
-#### Players Rank on Team Orange
+#### __Players Rank on Team Orange__
 オレンジチームから表示する選手の順位を選択できます。
 
 ---
 
-#### Change Low Score Players on Lose Team (Prioritize Random Change Players, Random Change Players on Team, and Change Players on Team)
+#### __Change Low Score Players on Lose Team (Prioritize Random Change Players, Random Change Players on Team, and Change Players on Team)__
 負けチームにて任意の順位から下位の選手の名前を表示します。  
 チェックを入れると有効になります。  
 ※`Random Change Players`、`Random Change Players on Team`、または`Change Players on Team`にチェックが入っている場合は無効になります。
 
-#### Low Score Players Num on Lose Team
+#### __Low Score Players Num on Lose Team__
 負けチームから表示する選手の順位を選択できます。  
 選択した順位から下位の選手が表示されます。
 
 ---
 
-#### Fill Box Color
+#### __Fill Box Color__
 表示エリアの背景色（RGB）、透明度を任意に設定できます。
 
-#### Draw Box Color
+#### __Draw Box Color__
 表示エリアの枠の色（RGB）、透明度を任意に設定できます。
 
-#### Box Position
+#### __Box Position__
 表示エリアの表示位置を任意に設定できます。
 
-#### Box Scale
+#### __Box Scale__
 表示エリアの大きさを正常に設定できません。今後修正予定です。
 
 
@@ -155,6 +156,6 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 リクエストも受け付けておりません。ごめんね。
 
 ## 6. コミュニケーション
-|:--:|:--|
+|:---:|:---|
 |[Twitter](https://twitter.com/azurehawk)|あんまりつぶやかないです。|
 |[Discord](https://discord.gg/bk6cWFU)|ライブとかするかもです。仲良くしてね！|
