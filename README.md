@@ -9,6 +9,7 @@
 3. 各チームにて任意の順位から下位の選手の名前を表示
 4. 負けチームにて任意の順位から下位の選手の名前を表示
 
+※趣味で作成したものなので、プラグインインストール後のロケットリーグの動作保証はいたしかねます。
 
 ## 0. BakkesModのインストール
 本プログラムはBakkesModのプラグインです。  
@@ -57,19 +58,22 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 
 ### 3.2. 操作画面の説明
 #### Enable
-プラグインのオン・オフ。  
 チェックを入れるとプラグインが有効になります。
 
+---
+
 #### Random Change Players
-試合参加選手から選手名をランダムに表示するモードです。  
+試合参加選手から選手名をランダムに表示します。  
 表示する選手数は任意に決めれます。  
 チェックを入れると有効になります。
 
 #### Players Num
 試合参加選手から表示する選手数を選択できます。
 
+---
+
 #### Random Change Players on Team (Prioritize Random Change Players)
-各チームから選手名をランダムに表示するモードです。  
+各チームから選手名をランダムに表示します。  
 表示する選手数は任意に決めれます。  
 チェックを入れると有効になります。  
 ※`Random Change Players`にチェックが入っている場合は無効になります。
@@ -80,8 +84,10 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 #### Players Num on Team Orange
 オレンジチームから表示する選手数を選択できます。
 
+---
+
 #### Change Players on Team (Prioritize Random Change Players, and Random Change Players on Team)
-各チームから任意の順位の選手名を表示するモードです。  
+各チームから任意の順位の選手名を表示します。  
 チェックを入れると有効になります。  
 ※`Random Change Players`、または`Random Change Players on Team`にチェックが入っている場合は無効になります。
 
@@ -91,8 +97,10 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 #### Players Rank on Team Orange
 オレンジチームから表示する選手の順位を選択できます。
 
+---
+
 #### Change Low Score Players on Lose Team (Prioritize Random Change Players, Random Change Players on Team, and Change Players on Team)
-負けチームにて任意の順位から下位の選手の名前を表示するモードです。  
+負けチームにて任意の順位から下位の選手の名前を表示します。  
 チェックを入れると有効になります。  
 ※`Random Change Players`、`Random Change Players on Team`、または`Change Players on Team`にチェックが入っている場合は無効になります。
 
@@ -100,14 +108,53 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 負けチームから表示する選手の順位を選択できます。  
 選択した順位から下位の選手が表示されます。
 
+---
+
 #### Fill Box Color
-表示エリアの背景色（RGB）、透明度を設定できます。
+表示エリアの背景色（RGB）、透明度を任意に設定できます。
 
 #### Draw Box Color
-表示エリアの枠の色（RGB）、透明度を設定できます。
+表示エリアの枠の色（RGB）、透明度を任意に設定できます。
 
-#### Position
-表示エリアの表示位置を設定できます。
+#### Box Position
+表示エリアの表示位置を任意に設定できます。
 
-#### Scale
-表示エリアの大きさを設定できません。今後修正予定です。
+#### Box Scale
+表示エリアの大きさを正常に設定できません。今後修正予定です。
+
+
+## 4. プラグインのアンインストール
+アンインストールは下記の手順で行えます。
+
+1. BakkesModを起動し`File`->`Open BakkesMod folder`でフォルダを開く
+2. `plugins`フォルダを開き、DispChangePlayerPlugin.dllファイルを削除する
+3. `settings`フォルダを開き、dispchangeplayerplugin.setファイルを削除する
+4. BakkesModを起動し`File`->`Open BakkesMod folder`でフォルダを開く
+5. `cfg`フォルダのplugins.cfgをメモ帳で開き「plugin load dispchangeplayerplugin」の記載を削除する
+
+## 5. よくある質問
+### 5.1. 試合終了と同時にロケットリーグがダウンする
+本プラグインのバグかもしれません。  
+一度本プラグインをアンインストールし、ロケットリーグをプレイしてみてください。  
+それでもダウンするようでしたら多分、原因は別にあります。
+解決しないようであればロケットリーグの再インストールをお願いします。
+
+### 5.2. 今後のアップデート予定は？
+下記アップデートを予定してます。
+
+* 文字色の任意変更
+* 表示エリアの大きさを任意に設定
+* デザインに自由度を持たせるためOBSとの連携
+
+予定はしてますが、趣味で作っているものなのでいつごろ完成するかはわかりません。  
+首を長くして待っていいただけますと幸いです。
+
+### 5.3. 他にプラグインを作る予定はある？
+今のところないです。  
+いいアイディアとやる気が沸いてきたら作るかもしれません。  
+リクエストも受け付けておりません。ごめんね。
+
+## 6. コミュニケーション
+|:--:|:--|
+|[Twitter](https://twitter.com/azurehawk)|あんまりつぶやかないです。|
+|[Discord](https://discord.gg/bk6cWFU)|ライブとかするかもです。仲良くしてね！|
