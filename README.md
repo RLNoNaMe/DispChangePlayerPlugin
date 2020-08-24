@@ -4,10 +4,10 @@
 プライベートマッチで交代する選手を決め、画面上の表示エリアに名前を表示します。  
 交代選手の決定方法は4種から選べます。
 
-1. 試合参加者から任意の人数をランダムに決定
-2. 各チームから任意の人数をランダムに決定
-3. 各チームにて任意の順位から下位
-4. 負けチームにて任意の順位から下位
+1. 試合参加選手から任意の人数分の名前をランダムに表示
+2. 各チームの選手から任意の人数分の名前をランダムに表示
+3. 各チームにて任意の順位から下位の選手の名前を表示
+4. 負けチームにて任意の順位から下位の選手の名前を表示
 
 
 ## 0. BakkesModのインストール
@@ -57,30 +57,57 @@ F2キーを押し、BakkesModのメニュー画面を開いて`plugins`タブを押し、
 
 ### 3.2. 操作画面の説明
 #### Enable
-プラグインのオン・オフ
+プラグインのオン・オフ。  
+チェックを入れるとプラグインが有効になります。
 
 #### Random Change Players
+試合参加選手から選手名をランダムに表示するモードです。  
+表示する選手数は任意に決めれます。  
+チェックを入れると有効になります。
 
 #### Players Num
+試合参加選手から表示する選手数を選択できます。
 
 #### Random Change Players on Team (Prioritize Random Change Players)
+各チームから選手名をランダムに表示するモードです。  
+表示する選手数は任意に決めれます。  
+チェックを入れると有効になります。  
+※`Random Change Players`にチェックが入っている場合は無効になります。
 
 #### Players Num on Team Blue
+ブルーチームから表示する選手数を選択できます。
 
 #### Players Num on Team Orange
+オレンジチームから表示する選手数を選択できます。
 
 #### Change Players on Team (Prioritize Random Change Players, and Random Change Players on Team)
+各チームから任意の順位の選手名を表示するモードです。  
+チェックを入れると有効になります。  
+※`Random Change Players`、または`Random Change Players on Team`にチェックが入っている場合は無効になります。
 
 #### Players Rank on Team Blue
+ブルーチームから表示する選手の順位を選択できます。
 
 #### Players Rank on Team Orange
+オレンジチームから表示する選手の順位を選択できます。
 
 #### Change Low Score Players on Lose Team (Prioritize Random Change Players, Random Change Players on Team, and Change Players on Team)
+負けチームにて任意の順位から下位の選手の名前を表示するモードです。  
+チェックを入れると有効になります。  
+※`Random Change Players`、`Random Change Players on Team`、または`Change Players on Team`にチェックが入っている場合は無効になります。
 
 #### Low Score Players Num on Lose Team
+負けチームから表示する選手の順位を選択できます。  
+選択した順位から下位の選手が表示されます。
 
 #### Fill Box Color
+表示エリアの背景色（RGB）、透明度を設定できます。
 
 #### Draw Box Color
+表示エリアの枠の色（RGB）、透明度を設定できます。
 
+#### Position
+表示エリアの表示位置を設定できます。
 
+#### Scale
+表示エリアの大きさを設定できません。今後修正予定です。
