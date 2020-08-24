@@ -2,7 +2,7 @@
 ## 概要
 ロケットリーグのMODの1つ、BakkesModのプラグインです。
 
-プライベートマッチで交代する選手を決め、画面上の表示エリアに名前を表示します。
+プライベートマッチで交代する選手を決め、画面上の表示エリアに名前を表示します。  
 交代選手の決定方法は4種から選べます。
 
 1. 試合参加者から任意の人数をランダムに決定
@@ -14,29 +14,30 @@
 
 
 ## 0. BakkesModのインストール
-本プログラムはBakkesModのプラグインです。
+本プログラムはBakkesModのプラグインです。  
 本プログラムを利用するには、事前にBakkesModをインストールする必要があります。
 
-既にインストールの仕方や使い方などは他の方が紹介しているため、
+既にインストールの仕方や使い方などは他の方が紹介しているため、  
 ここでは割愛し、参考となるページのみ掲載します。
 
-* [【 ロケットリーグ 】みんな大好き、BakkesMod の使い方](https://note.com/forusian/n/n041bea6cd43f)
-* [BakkesModの紹介 Steamのみ](https://note.com/kanrarl/n/nffb6b89f1300)
+* [【 ロケットリーグ 】みんな大好き、BakkesMod の使い方][https://note.com/forusian/n/n041bea6cd43f]
+* [BakkesModの紹介 Steamのみ][https://note.com/kanrarl/n/nffb6b89f1300]
 
 BakkesModをインストールし、ロケットリーグで動作の確認ができましたら、
 プラグインのダウンロードに進んでください。
 
 ## 1. プラグインのダウンロード方法
-本ページの緑色のCodeボタン→Download ZIPボタンから、
+本ページの緑色のCodeボタン→Download ZIPボタンから、  
 もしくは下記リンクからプラグインをダウンロードし解凍してください。
 
-[ダウンロード](https://github.com/RLNoNaMe/DispChangePlayerPlugin/archive/master.zip)
+[ダウンロード][https://github.com/RLNoNaMe/DispChangePlayerPlugin/archive/master.zip]
 
 プラグインのインストールに必要なファイルは2つだけです。
+
 1. DispChangePlayerPlugin.dll（pluginsフォルダ内）
 2. dispchangeplayerplugin.set（pluginsフォルダ->settingフォルダ内）
 
-解凍したファイル群から上記2つのファイルが確認できましたら、
+解凍したファイル群から上記2つのファイルが確認できましたら、  
 プラグインのインストールに進んでください。
 
 ## 2. プラグインのインストール方法
@@ -49,8 +50,8 @@ BakkesModをインストールし、ロケットリーグで動作の確認ができましたら、
 5. cfgフォルダのplugins.cfgをメモ帳で開き「plugin load dispchangeplayerplugin」を追記する
 6. ロケットリーグを起動する（既に起動している場合は再起動）
 
-F2キーを押し、BakkesModのメニュー画面を開いてpluginsタブを押し、
-サイドメニューに「DispChangePlayerPlugin」が追加されていることが確認できましたら、
+F2キーを押し、BakkesModのメニュー画面を開いてpluginsタブを押し、  
+サイドメニューに「DispChangePlayerPlugin」が追加されていることが確認できましたら、  
 プラグインのインストール完了です。
 
 
