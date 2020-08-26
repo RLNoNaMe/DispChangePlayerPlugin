@@ -47,7 +47,7 @@
 プラグインのインストールに進んでください。
 
 ## 2. プラグインのインストール
-**BakkesMod**を起動し`File`->`Open BakkesMod folder`をクリックし`bakkesmod`フォルダを開いてください。  
+**BakkesMod**起動後、`File`->`Open BakkesMod folder`をクリックし`bakkesmod`フォルダを開いてください。  
 たくさんのフォルダ、ファイルがありますが、  
 用があるフォルダは下記の3つだけです。
 
@@ -57,8 +57,8 @@
 
 `bakkesmod`フォルダを開きましたら、下記手順に沿ってインストールを行ってください。
 
-1. `cfg`フォルダ内の**plugins.cfg**ファイルを**メモ帳**で開き、「plugin load dispchangeplayerplugin」を追記する
-2. `plugins`フォルダ内に、DispChangePlayerPlugin.dllを設置する
+1. `cfg`フォルダ内のplugins.cfgファイルを**メモ帳**で開き、「plugin load dispchangeplayerplugin」を追記する
+2. `plugins`フォルダに、DispChangePlayerPlugin.dllを設置する
 3. `plugins`フォルダ内の`settings`フォルダに、dispchangeplayerplugin.setを設置する
 4. **ロケットリーグ**を起動する（既に起動している場合は再起動）
 5. `F2`キーを押し、**BakkesMod**のメニュー画面を開いて`plugins`タブを押す
@@ -131,17 +131,16 @@
 表示エリアの表示位置を任意に設定できます。
 
 ### Box Scale
-表示エリアの大きさを正常に設定できません。今後修正予定です。
+***表示エリアの大きさを正常に設定できません。今後修正予定です。***
 
 
 ## 4. プラグインのアンインストール
 アンインストールは下記の手順で行えます。
 
-1. BakkesModを起動し`File`->`Open BakkesMod folder`でフォルダを開く
-2. `plugins`フォルダを開き、DispChangePlayerPlugin.dllファイルを削除する
-3. `settings`フォルダを開き、dispchangeplayerplugin.setファイルを削除する
-4. BakkesModを起動し`File`->`Open BakkesMod folder`でフォルダを開く
-5. `cfg`フォルダのplugins.cfgをメモ帳で開き「plugin load dispchangeplayerplugin」の記載を削除する
+1. BakkesModを起動し`File`->`Open BakkesMod folder`で`bakkesmod`フォルダを開く
+2. `cfg`フォルダ内のplugins.cfgファイルを**メモ帳**で開き「plugin load dispchangeplayerplugin」の記載を削除する
+3. `plugins`フォルダから、DispChangePlayerPlugin.dllファイルを削除する
+4. `settings`フォルダ内の`settings`フォルダから、dispchangeplayerplugin.setファイルを削除する
 
 ## 5. よくある質問
 ### 5.1. 試合終了と同時にロケットリーグがダウンする
@@ -159,7 +158,7 @@
 ### 5.3. カジュアル、ランクでもこのプラグインが動いているけどBANされない？
 本プラグインは、**Bakkesmod**が**ロケットリーグ**から取得しているデータを、  
 試合終了後にこねくり回しているだけなので、  
-**Bakkesmod**が直接サーバで操作していない限り、大丈夫だと思われます。  
+**Bakkesmod**が直接サーバ側を操作していない限り、大丈夫だと思われます。  
 ただ現状確証を得ていないため、不安でしたら`Enable`のチェックを外し、  
 本プラグインを無効にしておくことをオススメいたします。
 
