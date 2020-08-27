@@ -101,6 +101,18 @@ void DispChangePlayerPlugin::PlayerNameRender(CanvasWrapper canvas)
 	int padding = 15;
 	Vector2 sz = canvas.GetSize();
 
+	if (lose_team == 1) {
+		canvas.SetColor(30, 144, 255, 255);
+		canvas.SetPosition(Vector2{ (sz.X * x_position) / 100, (sz.Y * y_position) / 100 + padding });
+		canvas.DrawString("[ Winning Team ] Blue", box_scale, box_scale);
+		padding += 15;
+	} else {
+		canvas.SetColor(255, 143, 34, 255);
+		canvas.SetPosition(Vector2{ (sz.X * x_position) / 100, (sz.Y * y_position) / 100 + padding });
+		canvas.DrawString("[ Winning Team ] Orange", box_scale, box_scale);
+		padding += 15;
+	}
+
 	if (enable_random_change_players) {
 		canvas.SetColor(240, 240, 240, 255);
 		canvas.SetPosition(Vector2{ (sz.X * x_position) / 100, (sz.Y * y_position) / 100 + padding });
