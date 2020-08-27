@@ -194,5 +194,5 @@
 
 | Name | Comment |
 | :---: | :--- |
-| [Twitter](https://twitter.com/azurehawk)| あんまりつぶやかないです。  ※アップデート情報のみ発信 |
-| [Discord](https://discord.gg/bk6cWFU)| ライブとかするかもです。仲良くしてね！  ※アップデート情報を発信、お問い合わせはこちらへ |
+| [Twitter](https://twitter.com/azurehawk)| 中身のないことをつぶやいています。  ※アップデート情報も通知します。 |
+| [Discord](https://discord.gg/bk6cWFU)| ライブとかするかもです。仲良くしてね！  ※アップデート情報を通知、お問い合わせはこちらへ |
