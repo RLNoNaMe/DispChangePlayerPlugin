@@ -392,6 +392,7 @@ void DispChangePlayerPlugin::WinnerTeamOutputToFile()
 		output_stringstream << "";
 		OutputToFile(output_filename_win_team_orange);
 	} else {
+		ClearOutputStringstream();
 		std::string str = "Team Orange";
 		output_stringstream << str;
 		OutputToFile(output_filename_win_team_orange);
@@ -408,8 +409,7 @@ void DispChangePlayerPlugin::RandomChangePlayersOutputToFile()
 	for (int i = 0; i < disp_change_players_count; i++) {
 		int index = random_players_no_list[i];
 		std::string player_name = player_stats_list[index].name;
-		std::string str = "Player " + std::to_string(i + 1) + " : " + player_name;
-		output_stringstream << str + "\n";
+		output_stringstream << player_name + "\n";
 	}
 	OutputToFile(output_filename_random_chagen_player_name);
 }
@@ -420,8 +420,7 @@ void DispChangePlayerPlugin::RandomChangePlayersOnTeamOutputToFile()
 	for (int i = 0; i < disp_change_players_count_on_team_blue; i++) {
 		int index = random_players_no_list_on_team_blue[i];
 		std::string player_name = player_stats_list_on_team_blue[index].name;
-		std::string str = "Player " + std::to_string(i + 1) + " : " + player_name;
-		output_stringstream << str + "\n";
+		output_stringstream << player_name + "\n";
 	}
 	OutputToFile(output_filename_random_chagen_player_name_on_team_blue);
 
@@ -429,8 +428,7 @@ void DispChangePlayerPlugin::RandomChangePlayersOnTeamOutputToFile()
 	for (int i = 0; i < disp_change_players_count_on_team_orange; i++) {
 		int index = random_players_no_list_on_team_orange[i];
 		std::string player_name = player_stats_list_on_team_orange[index].name;
-		std::string str = "Player " + std::to_string(i + 1) + " : " + player_name;
-		output_stringstream << str + "\n";
+		output_stringstream << player_name + "\n";
 	}
 	OutputToFile(output_filename_random_chagen_player_name_on_team_orange);
 }
@@ -440,16 +438,14 @@ void DispChangePlayerPlugin::ChangePlayersRankOnTeamOutputToFile()
 	ClearOutputStringstream();
 	if (disp_change_players_rank_on_team_blue > 0) {
 		std::string player_name = player_stats_list_on_team_blue[disp_change_players_rank_on_team_blue - 1].name;
-		std::string str = "Player : " + player_name;
-		output_stringstream << str + "\n";
+		output_stringstream << player_name + "\n";
 	}
 	OutputToFile(output_filename_rank_chagen_player_name_on_team_blue);
 
 	ClearOutputStringstream();
 	if (disp_change_players_rank_on_team_orange > 0) {
 		std::string player_name = player_stats_list_on_team_orange[disp_change_players_rank_on_team_orange - 1].name;
-		std::string str = "Player : " + player_name;
-		output_stringstream << str + "\n";
+		output_stringstream << player_name + "\n";
 	}
 	OutputToFile(output_filename_rank_chagen_player_name_on_team_orange);
 }
@@ -460,14 +456,12 @@ void DispChangePlayerPlugin::ChangeLowScorePlayersOnLoseTeamOutputToFile()
 	if (lose_team == 0 && disp_change_low_score_players_num_on_team_blue > 0) {
 		for (int i = disp_change_low_score_players_num_on_team_blue - 1; i < players_count_on_team_blue; i++) {
 			std::string player_name = player_stats_list_on_team_blue[i].name;
-			std::string str = "Player " + std::to_string(i + 1) + " : " + player_name;
-			output_stringstream << str + "\n";
+			output_stringstream << player_name + "\n";
 		}
 	} else if (lose_team == 1 && disp_change_low_score_players_num_on_team_orange > 0) {
 		for (int i = disp_change_low_score_players_num_on_team_orange - 1; i < players_count_on_team_orange; i++) {
 			std::string player_name = player_stats_list_on_team_orange[i].name;
-			std::string str = "Player " + std::to_string(i + 1) + " : " + player_name;
-			output_stringstream << str + "\n";
+			output_stringstream << player_name + "\n";
 		}
 	}
 	OutputToFile(output_filename_change_low_score_player_name_on_lose_team);
