@@ -1,6 +1,9 @@
 DispChangePlayerPlugin
 1|Enable|enable_disp_change_player_plugin
 8|
+1|Output Change Players to File|output_change_players_to_file
+9|Output directory is "bakkesmod/data/dispchangeplayer/"
+8|
 1|Random Change Players|enable_random_change_players
 6|Players Num|random_change_players_num|1@1&2@2&3@3&4@4&5@5&6@6&7@7&8@8
 8|

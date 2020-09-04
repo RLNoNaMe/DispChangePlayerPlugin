@@ -1,13 +1,28 @@
 #pragma once
 #pragma comment( lib, "bakkesmod.lib" )
 #include "bakkesmod/plugin/bakkesmodplugin.h"
+#include "bakkesmod/wrappers/canvaswrapper.h"
 
 class DispChangePlayerPlugin : public BakkesMod::Plugin::BakkesModPlugin
 {
 private:
-	bool enable_disp_change_player_plugin;
+	/* ---- PluginParam(Start) ---- */
+	std::string output_directory = "bakkesmod/data/dispchangeplayer/";
+	std::string output_filename_win_team_blue = "win_team_blue.txt";
+	std::string output_filename_win_team_orange = "win_team_orange.txt";
+	std::string output_filename_random_chagen_player_name = "random_change_player_name.txt";
+	std::string output_filename_random_chagen_player_name_on_team_blue = "random_chagen_player_name_on_team_blue.txt";
+	std::string output_filename_random_chagen_player_name_on_team_orange = "random_chagen_player_name_on_team_orange.txt";
+	std::string output_filename_rank_chagen_player_name_on_team_blue = "rank_chagen_player_name_on_team_blue.txt";
+	std::string output_filename_rank_chagen_player_name_on_team_orange = "rank_chagen_player_name_on_team_orange.txt";
+	std::string output_filename_change_low_score_player_name_on_lose_team = "change_low_score_player_name_on_lose_team.txt";
+	/* ---- PluginParam(End) ---- */
 
 	/* ---- InputStatus(Start) ---- */
+	bool enable_disp_change_player_plugin;
+
+	bool output_change_players_to_file;
+
 	bool enable_random_change_players;
 	int random_change_players_num;
 
@@ -23,6 +38,22 @@ private:
 	int change_low_score_player_num_on_lose_team;
 	/* ---- InputStatus(End) ---- */
 
+	/* ---- RenderStatus(Start) ---- */
+	int common_string_color_r = 240;
+	int common_string_color_g = 240;
+	int common_string_color_b = 240;
+	int common_string_color_a = 255;
+
+	int team_blue_string_color_r = 30;
+	int team_blue_string_color_g = 144;
+	int team_blue_string_color_b = 255;
+	int team_blue_string_color_a = 255;
+
+	int team_orange_string_color_r = 255;
+	int team_orange_string_color_g = 143;
+	int team_orange_string_color_b = 34;
+	int team_orange_string_color_a = 255;
+
 	int fill_box_color_r;
 	int fill_box_color_g;
 	int fill_box_color_b;
@@ -36,6 +67,10 @@ private:
 	int x_position;
 	int y_position;
 	float box_scale;
+
+	int padding = 0;
+	std::stringstream output_stringstream;
+	/* ---- RenderStatus(End) ---- */
 
 	/* ---- PlayerStatsList(Start) ---- */
 	int team_count = 0;
@@ -97,11 +132,28 @@ public:
 	virtual void onLoad();
 	virtual void onUnLoad();
 
-	void UiRender(CanvasWrapper canvas);
-	void PlayerNameRender(CanvasWrapper canvas);
 	void EndGame(std::string eventName);
+
 	void SetInputStaus();
 	void SetPlayerStatsList(ServerWrapper sw);
 	void SetDispChangePlayersCount();
 	void* CreateRandomNoList(int count, int random_no_list[]);
+
+	void CreateOutputDirectory();
+	void ClearOutputStringstream();
+	void OutputToFile(std::string output_filename);
+	void WinnerTeamOutputToFile();
+	void RandomChangePlayersOutputToFile();
+	void RandomChangePlayersOnTeamOutputToFile();
+	void ChangePlayersRankOnTeamOutputToFile();
+	void ChangeLowScorePlayersOnLoseTeamOutputToFile();
+
+	void UiRender(CanvasWrapper canvas);
+	void FillBoxCanvasRender(CanvasWrapper canvas);
+	void DrawBoxCanvasRender(CanvasWrapper canvas);
+	void CommonStringColorCanvasRender(CanvasWrapper canvas, std::string str);
+	void TeamBlueStringColorCanvasRender(CanvasWrapper canvas, std::string str);
+	void TeamOrangeStringColorCanvasRender(CanvasWrapper canvas, std::string str);
+
+	std::string WStringToString(std::wstring string);
 };
